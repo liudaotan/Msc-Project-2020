@@ -1,4 +1,4 @@
-# Msc-Project-2020
+# Msc Master Projects （2020 Autumn）
 
 ## COM6513 Natural Language Processing. 
 This module provides an introduction to the field of computer processing of written natural language, known as Natural Language Processing (NLP). We will cover standard theories, models and algorithms, discuss competing solutions to problems, describe example systems and applications, and highlight areas of open research.
