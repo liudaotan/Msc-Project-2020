@@ -1,0 +1,76 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/04/29 14:59:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/04/29 14:59:21 INFO SparkContext: Running Spark version 3.0.1
+21/04/29 14:59:21 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/04/29 14:59:21 INFO ResourceUtils: ==============================================================
+21/04/29 14:59:21 INFO ResourceUtils: Resources for spark.driver:
+
+21/04/29 14:59:21 INFO ResourceUtils: ==============================================================
+21/04/29 14:59:21 INFO SparkContext: Submitted application: assignment2
+21/04/29 14:59:21 INFO SecurityManager: Changing view acls to: acp20dl
+21/04/29 14:59:21 INFO SecurityManager: Changing modify acls to: acp20dl
+21/04/29 14:59:21 INFO SecurityManager: Changing view acls groups to: 
+21/04/29 14:59:21 INFO SecurityManager: Changing modify acls groups to: 
+21/04/29 14:59:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20dl); groups with view permissions: Set(); users  with modify permissions: Set(acp20dl); groups with modify permissions: Set()
+21/04/29 14:59:21 INFO Utils: Successfully started service 'sparkDriver' on port 43696.
+21/04/29 14:59:21 INFO SparkEnv: Registering MapOutputTracker
+21/04/29 14:59:21 INFO SparkEnv: Registering BlockManagerMaster
+21/04/29 14:59:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/04/29 14:59:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/04/29 14:59:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/04/29 14:59:21 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20dl/blockmgr-96daccdf-1828-441b-a70f-7964666a06eb
+21/04/29 14:59:22 INFO MemoryStore: MemoryStore started with capacity 21.2 GiB
+21/04/29 14:59:22 INFO SparkEnv: Registering OutputCommitCoordinator
+21/04/29 14:59:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/04/29 14:59:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/04/29 14:59:22 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+21/04/29 14:59:22 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node174.shef.ac.uk:4042
+21/04/29 14:59:22 INFO Executor: Starting executor ID driver on host sharc-node174.shef.ac.uk
+21/04/29 14:59:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36494.
+21/04/29 14:59:22 INFO NettyBlockTransferService: Server created on sharc-node174.shef.ac.uk:36494
+21/04/29 14:59:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/04/29 14:59:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 36494, None)
+21/04/29 14:59:22 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node174.shef.ac.uk:36494 with 21.2 GiB RAM, BlockManagerId(driver, sharc-node174.shef.ac.uk, 36494, None)
+21/04/29 14:59:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 36494, None)
+21/04/29 14:59:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node174.shef.ac.uk, 36494, None)
+21/04/29 14:59:23 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/data/acp20dl/assignment2/HPC/spark-warehouse').
+21/04/29 14:59:23 INFO SharedState: Warehouse path is 'file:/data/acp20dl/assignment2/HPC/spark-warehouse'.
+21/04/29 14:59:53 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+The percent of Null in Blind_Model : 0.06394731911995262 %
+The percent of Null in Cat1 : 0.19706028917749838 %
+The percent of Null in Cat2 : 36.96948413604373 %
+The percent of Null in Cat3 : 0.030331553690035637 %
+The percent of Null in Cat4 : 42.71484471291211 %
+The percent of Null in Cat5 : 42.75786561126917 %
+The percent of Null in Cat6 : 0.19706028917749838 %
+The percent of Null in Cat7 : 54.364960115410085 %
+The percent of Null in Cat8 : 0.02551521545718427 %
+The percent of Null in Cat10 : 0.029709601351305227 %
+The percent of Null in Cat11 : 0.23868558716472407 %
+The percent of Null in Cat12 : 0.2190637493562414 %
+The percent of Null in OrdCat : 0.057234784732435345 %
+The claim/unclaim:  0.994449850584731
+21/04/29 15:02:46 WARN Instrumentation: [48e817f4] regParam is zero, which might cause numerical instability and overfitting.
+21/04/29 15:02:54 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/04/29 15:02:54 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/04/29 15:03:32 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/04/29 15:03:32 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+MAE on test data: 94.80180556918499
+MSE on test data: 10264.20747084505
+Total time of LinearRegression:  2.3833333333333333  minutes.
+21/04/29 15:07:01 WARN Instrumentation: [9cd8fedf] Cholesky solver failed due to singular covariance matrix. Retrying with Quasi-Newton solver.
+21/04/29 15:07:01 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search zoom failed
+21/04/29 15:07:01 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search zoom failed
+21/04/29 15:07:01 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/29 15:07:01 ERROR LBFGS: Failure again! Giving up and returning. Maybe the objective is just poorly behaved?
+21/04/29 15:18:24 WARN Instrumentation: [9cd8fedf] Cholesky solver failed due to singular covariance matrix. Retrying with Quasi-Newton solver.
+21/04/29 15:18:44 WARN Instrumentation: [9cd8fedf] Cholesky solver failed due to singular covariance matrix. Retrying with Quasi-Newton solver.
+21/04/29 15:18:44 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search zoom failed
+21/04/29 15:18:44 ERROR LBFGS: Failure again! Giving up and returning. Maybe the objective is just poorly behaved?
+21/04/29 15:19:24 WARN Instrumentation: [9cd8fedf] Cholesky solver failed due to singular covariance matrix. Retrying with Quasi-Newton solver.
+21/04/29 15:22:28 WARN Instrumentation: [9cd8fedf] Cholesky solver failed due to singular covariance matrix. Retrying with Quasi-Newton solver.
+MAE on test data: 1.3645236452728158
+MSE on test data: 1539.6420643754338
+Total time of combination of two models:  19.15  minutes.
