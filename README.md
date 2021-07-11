@@ -51,3 +51,15 @@ Parallelization & optimization in Spark
 6. Scalable GLM & applications
 7. Scalable neural networks
 8. Other topics
+
+## COM4509/6509 Machine Learning and Adaptive Intelligence 
+* Session 1: Introduction to Machine Learning 
+* Session 2: End-to-end machine learning
+* Session 3: Linear regression
+* Session 4: Decision trees and ensemble methods
+* Session 5: Automatic differentiation
+* Session 6: Logistic regression and PyTorch for deep learning
+* Session 7: Neural networks
+* Session 8: Unsupervised learning 
+* Session 9: Generative models
+* Session 10: Machine Learning in Medical Imaging
