@@ -1,0 +1,93 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/11 17:58:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/11 17:58:19 INFO SparkContext: Running Spark version 3.0.1
+21/03/11 17:58:19 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/11 17:58:20 INFO ResourceUtils: ==============================================================
+21/03/11 17:58:20 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/11 17:58:20 INFO ResourceUtils: ==============================================================
+21/03/11 17:58:20 INFO SparkContext: Submitted application: assignment1_Q2
+21/03/11 17:58:20 INFO SecurityManager: Changing view acls to: acp20dl
+21/03/11 17:58:20 INFO SecurityManager: Changing modify acls to: acp20dl
+21/03/11 17:58:20 INFO SecurityManager: Changing view acls groups to: 
+21/03/11 17:58:20 INFO SecurityManager: Changing modify acls groups to: 
+21/03/11 17:58:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20dl); groups with view permissions: Set(); users  with modify permissions: Set(acp20dl); groups with modify permissions: Set()
+21/03/11 17:58:20 INFO Utils: Successfully started service 'sparkDriver' on port 37242.
+21/03/11 17:58:20 INFO SparkEnv: Registering MapOutputTracker
+21/03/11 17:58:20 INFO SparkEnv: Registering BlockManagerMaster
+21/03/11 17:58:20 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/11 17:58:20 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/11 17:58:20 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/11 17:58:20 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20dl/blockmgr-92d3eb92-ef5e-4804-bd98-f085fd7e3fb0
+21/03/11 17:58:20 INFO MemoryStore: MemoryStore started with capacity 10.5 GiB
+21/03/11 17:58:20 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/11 17:58:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/11 17:58:20 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/11 17:58:20 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+21/03/11 17:58:20 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+21/03/11 17:58:20 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+21/03/11 17:58:20 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4044
+21/03/11 17:58:21 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/03/11 17:58:21 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46519.
+21/03/11 17:58:21 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:46519
+21/03/11 17:58:21 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/11 17:58:21 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 46519, None)
+21/03/11 17:58:21 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:46519 with 10.5 GiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 46519, None)
+21/03/11 17:58:21 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 46519, None)
+21/03/11 17:58:21 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 46519, None)
+21/03/11 17:58:21 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/data/acp20dl/assignment1/HPC/spark-warehouse').
+21/03/11 17:58:21 INFO SharedState: Warehouse path is 'file:/data/acp20dl/assignment1/HPC/spark-warehouse'.
+21/03/11 17:59:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/11 17:59:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/11 17:59:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/11 17:59:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/11 17:59:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/11 17:59:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+The size of percent_50_train: 13876722; the size of percent_50_test 13876722
+The size of percent_65_train: 18039738; the size of percent_35_test 9713706
+The size of percent_80_train: 22202755; the size of percent_20_test 5550689
+21/03/11 18:04:48 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/03/11 18:04:48 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/03/11 18:04:49 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/03/11 18:04:49 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+als1 = ALS(userCol="userId", itemCol="movieId", seed=myseed, coldStartStrategy="drop")
+als2 = ALS(userCol="userId", itemCol="movieId", seed=myseed, regParam = 0.01, coldStartStrategy="drop")
+als3 = ALS(userCol="userId", itemCol="movieId", seed=myseed, maxIter=15, nonnegative = True, coldStartStrategy="drop")
++-----+-----+-----+-----+-----+
+|MODEL|SPLIT| RMSE|  MSE|  MAE|
++-----+-----+-----+-----+-----+
+| ALS1|50-50|0.788|0.621|0.597|
+| ALS1|65-35|0.806|0.649|0.603|
+| ALS1|80-20|0.860|0.739|0.645|
+| ALS2|50-50|0.825|0.681|0.616|
+| ALS2|65-35|0.867|0.752|0.638|
+| ALS2|80-20|0.939|0.882|0.688|
+| ALS3|50-50|0.790|0.624|0.599|
+| ALS3|65-35|0.807|0.651|0.608|
+| ALS3|80-20|0.860|0.740|0.645|
++-----+-----+-----+-----+-----+
+
++-----------------+---------+---------+---------+
+|            SPLIT|Top1-size|Top2-size|Top3-size|
++-----------------+---------+---------+---------+
+|Data-split: 50-50|    14249|    13534|     9823|
+|Data-split: 65-35|    21761|    14508|    14182|
+|Data-split: 80-20|    22943|    18832|    16854|
++-----------------+---------+---------+---------+
+
+21/03/11 18:48:04 WARN CacheManager: Asked to cache already cached data.
+21/03/11 18:48:51 WARN CacheManager: Asked to cache already cached data.
+21/03/11 18:49:49 WARN CacheManager: Asked to cache already cached data.
++--------+-----+------+--------+--------+------+
+|    Data|    1|     2|       3|       4|     5|
++--------+-----+------+--------+--------+------+
+|Train 50|Drama|Comedy| Romance|Thriller|Action|
+| Test 50|Drama|Comedy| Romance|Thriller|Action|
+|Train 65|Drama|Comedy| Romance|Thriller|Action|
+| Test 35|Drama|Comedy|Thriller| Romance|Action|
+|Train 80|Drama|Comedy| Romance|Thriller|Action|
+| Test 20|Drama|Comedy|Thriller| Romance|Action|
++--------+-----+------+--------+--------+------+
+

@@ -1,0 +1,107 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/11 18:32:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/11 18:32:37 INFO SparkContext: Running Spark version 3.0.1
+21/03/11 18:32:37 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/11 18:32:37 INFO ResourceUtils: ==============================================================
+21/03/11 18:32:37 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/11 18:32:37 INFO ResourceUtils: ==============================================================
+21/03/11 18:32:37 INFO SparkContext: Submitted application: assignment1
+21/03/11 18:32:37 INFO SecurityManager: Changing view acls to: acp20dl
+21/03/11 18:32:37 INFO SecurityManager: Changing modify acls to: acp20dl
+21/03/11 18:32:37 INFO SecurityManager: Changing view acls groups to: 
+21/03/11 18:32:37 INFO SecurityManager: Changing modify acls groups to: 
+21/03/11 18:32:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20dl); groups with view permissions: Set(); users  with modify permissions: Set(acp20dl); groups with modify permissions: Set()
+21/03/11 18:32:37 INFO Utils: Successfully started service 'sparkDriver' on port 46444.
+21/03/11 18:32:37 INFO SparkEnv: Registering MapOutputTracker
+21/03/11 18:32:37 INFO SparkEnv: Registering BlockManagerMaster
+21/03/11 18:32:37 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/11 18:32:37 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/11 18:32:37 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/11 18:32:37 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20dl/blockmgr-3766895b-7596-4ba6-b1b1-013fdac344db
+21/03/11 18:32:37 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+21/03/11 18:32:37 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/11 18:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/11 18:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/11 18:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+21/03/11 18:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+21/03/11 18:32:38 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+21/03/11 18:32:38 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node175.shef.ac.uk:4044
+21/03/11 18:32:38 INFO Executor: Starting executor ID driver on host sharc-node175.shef.ac.uk
+21/03/11 18:32:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33198.
+21/03/11 18:32:38 INFO NettyBlockTransferService: Server created on sharc-node175.shef.ac.uk:33198
+21/03/11 18:32:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/11 18:32:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 33198, None)
+21/03/11 18:32:38 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node175.shef.ac.uk:33198 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node175.shef.ac.uk, 33198, None)
+21/03/11 18:32:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node175.shef.ac.uk, 33198, None)
+21/03/11 18:32:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node175.shef.ac.uk, 33198, None)
+21/03/11 18:32:39 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/data/acp20dl/assignment1/HPC/spark-warehouse').
+21/03/11 18:32:39 INFO SharedState: Warehouse path is 'file:/data/acp20dl/assignment1/HPC/spark-warehouse'.
+
+
+There are 13077 hosts from universities in Japan .
+
+
+
+
+There are 25014 hosts from universities in UK.
+
+
+
+
+There are 227494 hosts from universities in US.
+
+
+========================================
+Top 9 of Japan
++--------------+-----+
+|host          |count|
++--------------+-----+
+|tohoku.ac.jp  |824  |
+|kyoto-u.ac.jp |703  |
+|nagoya-u.ac.jp|692  |
+|u-tokyo.ac.jp |689  |
+|osaka-u.ac.jp |527  |
+|shizuoka.ac.jp|472  |
+|ritsumei.ac.jp|426  |
+|keio.ac.jp    |346  |
+|waseda.ac.jp  |337  |
++--------------+-----+
+only showing top 9 rows
+
+========================================
+Top 9 of UK
++-----------+-----+
+|host       |count|
++-----------+-----+
+|hensa.ac.uk|4257 |
+|rl.ac.uk   |1158 |
+|ucl.ac.uk  |1036 |
+|man.ac.uk  |921  |
+|ic.ac.uk   |851  |
+|soton.ac.uk|808  |
+|bham.ac.uk |629  |
+|shef.ac.uk |623  |
+|le.ac.uk   |616  |
++-----------+-----+
+only showing top 9 rows
+
+========================================
+Top 9 of US
++--------------+-----+
+|host          |count|
++--------------+-----+
+|tamu.edu      |6062 |
+|berkeley.edu  |5439 |
+|fsu.edu       |4418 |
+|umn.edu       |4404 |
+|mit.edu       |3966 |
+|washington.edu|3925 |
+|uiuc.edu      |3750 |
+|utexas.edu    |3665 |
+|cmu.edu       |3244 |
++--------------+-----+
+only showing top 9 rows
+
